@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Siket.DAL", "..\..\..\..\Desktop\SirketOtomasyonu\SirketOtomasyonu\Siket.DAL\Siket.DAL.csproj", "{17733536-DE91-4C3A-862E-E6CB57452550}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirkeet.WFA", "..\..\..\..\Desktop\SirketOtomasyonu\SirketOtomasyonu\Sirkeet.WFA\Sirkeet.WFA.csproj", "{78F90111-92F1-4784-AC96-7D5498ABF219}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirket.BLL", "..\..\..\..\Desktop\SirketOtomasyonu\SirketOtomasyonu\Sirket.BLL\Sirket.BLL.csproj", "{AFDA3D4F-C70F-4F4A-A6A8-E308BB439D2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirket.Models", "..\..\..\..\Desktop\SirketOtomasyonu\SirketOtomasyonu\Sirket.Models\Sirket.Models.csproj", "{008AB5A1-17C4-48D7-828F-E949EF814309}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17733536-DE91-4C3A-862E-E6CB57452550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17733536-DE91-4C3A-862E-E6CB57452550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17733536-DE91-4C3A-862E-E6CB57452550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17733536-DE91-4C3A-862E-E6CB57452550}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78F90111-92F1-4784-AC96-7D5498ABF219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F90111-92F1-4784-AC96-7D5498ABF219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F90111-92F1-4784-AC96-7D5498ABF219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F90111-92F1-4784-AC96-7D5498ABF219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFDA3D4F-C70F-4F4A-A6A8-E308BB439D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDA3D4F-C70F-4F4A-A6A8-E308BB439D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDA3D4F-C70F-4F4A-A6A8-E308BB439D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDA3D4F-C70F-4F4A-A6A8-E308BB439D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{008AB5A1-17C4-48D7-828F-E949EF814309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{008AB5A1-17C4-48D7-828F-E949EF814309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{008AB5A1-17C4-48D7-828F-E949EF814309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{008AB5A1-17C4-48D7-828F-E949EF814309}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

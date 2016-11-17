@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78F90111-92F1-4784-AC96-7D5498ABF219}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sirkeet.WFA</RootNamespace>
+    <AssemblyName>Sirkeet.WFA</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.UI, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v15.2.Wizard, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Departman\FormDepartman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Departman\FormDepartman.Designer.cs">
+      <DependentUpon>FormDepartman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlınanUrun\AlınanUrun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlınanUrun\AlınanUrun.Designer.cs">
+      <DependentUpon>AlınanUrun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlınanKategori\FormAlınanKategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlınanKategori\FormAlınanKategori.Designer.cs">
+      <DependentUpon>FormAlınanKategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBasla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBasla.Designer.cs">
+      <DependentUpon>FormBasla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormlarMusteri\FormOdemeDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormlarMusteri\FormOdemeDetay.Designer.cs">
+      <DependentUpon>FormOdemeDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormlarMusteri\FormSiparisDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormlarMusteri\FormSiparisDetay.Designer.cs">
+      <DependentUpon>FormSiparisDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporlarForm\FormGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporlarForm\FormGrafik.Designer.cs">
+      <DependentUpon>FormGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporlarForm\FormGrafik2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporlarForm\FormGrafik2.Designer.cs">
+      <DependentUpon>FormGrafik2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporlarForm\FormGrafik3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporlarForm\FormGrafik3.Designer.cs">
+      <DependentUpon>FormGrafik3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporlarForm\FormGrafik4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporlarForm\FormGrafik4.Designer.cs">
+      <DependentUpon>FormGrafik4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporlarForm\FormSon1Ay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporlarForm\FormSon1Ay.Designer.cs">
+      <DependentUpon>FormSon1Ay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporlarForm\FormSon1Hafta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporlarForm\FormSon1Hafta.Designer.cs">
+      <DependentUpon>FormSon1Hafta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporlarForm\FormSonKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporlarForm\FormSonKayit.Designer.cs">
+      <DependentUpon>FormSonKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tedarikci\FormTedarikci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tedarikci\FormTedarikci.Designer.cs">
+      <DependentUpon>FormTedarikci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriForm\FormKategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriForm\FormKategori.Designer.cs">
+      <DependentUpon>FormKategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelForm\FormPersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelForm\FormPersonelEkle.Designer.cs">
+      <DependentUpon>FormPersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelForm\FormPersonelListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelForm\FormPersonelListele.Designer.cs">
+      <DependentUpon>FormPersonelListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormlarMusteri\FormMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormlarMusteri\FormMusteri.Designer.cs">
+      <DependentUpon>FormMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormlarMusteri\FormSiparis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormlarMusteri\FormSiparis.Designer.cs">
+      <DependentUpon>FormSiparis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AlınanUrun\AlınanUrun.resx">
+      <DependentUpon>AlınanUrun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlınanKategori\FormAlınanKategori.resx">
+      <DependentUpon>FormAlınanKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBasla.resx">
+      <DependentUpon>FormBasla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormlarMusteri\FormOdemeDetay.resx">
+      <DependentUpon>FormOdemeDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormlarMusteri\FormSiparisDetay.resx">
+      <DependentUpon>FormSiparisDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="RaporlarForm\FormGrafik.resx">
+      <DependentUpon>FormGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporlarForm\FormGrafik2.resx">
+      <DependentUpon>FormGrafik2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporlarForm\FormGrafik3.resx">
+      <DependentUpon>FormGrafik3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporlarForm\FormGrafik4.resx">
+      <DependentUpon>FormGrafik4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporlarForm\FormSon1Ay.resx">
+      <DependentUpon>FormSon1Ay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporlarForm\FormSon1Hafta.resx">
+      <DependentUpon>FormSon1Hafta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporlarForm\FormSonKayit.resx">
+      <DependentUpon>FormSonKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tedarikci\FormTedarikci.resx">
+      <DependentUpon>FormTedarikci.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Tedarikci\FormTedarikciyeUrunAta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tedarikci\FormTedarikciyeUrunAta.Designer.cs">
+      <DependentUpon>FormTedarikciyeUrunAta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UretilenUrunForm\FormUretilenUrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UretilenUrunForm\FormUretilenUrunEkle.Designer.cs">
+      <DependentUpon>FormUretilenUrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UretilenUrunForm\FormUrunListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UretilenUrunForm\FormUrunListele.Designer.cs">
+      <DependentUpon>FormUrunListele.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Departman\FormDepartman.resx">
+      <DependentUpon>FormDepartman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriForm\FormKategori.resx">
+      <DependentUpon>FormKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelForm\FormPersonelEkle.resx">
+      <DependentUpon>FormPersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelForm\FormPersonelListele.resx">
+      <DependentUpon>FormPersonelListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormlarMusteri\FormMusteri.resx">
+      <DependentUpon>FormMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormlarMusteri\FormSiparis.resx">
+      <DependentUpon>FormSiparis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Tedarikci\FormTedarikciyeUrunAta.resx">
+      <DependentUpon>FormTedarikciyeUrunAta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UretilenUrunForm\FormUretilenUrunEkle.resx">
+      <DependentUpon>FormUretilenUrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UretilenUrunForm\FormUrunListele.resx">
+      <DependentUpon>FormUrunListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sirket.BLL\Sirket.BLL.csproj">
+      <Project>{afda3d4f-c70f-4f4a-a6a8-e308bb439d2c}</Project>
+      <Name>Sirket.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sirket.Models\Sirket.Models.csproj">
+      <Project>{008ab5a1-17c4-48d7-828f-e949ef814309}</Project>
+      <Name>Sirket.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
